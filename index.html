@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="flex justify-center items-center flex-col font-mono">
+    <h1 class="font-bold text-4xl m-10">Guess the Number!</h1>
+    <p class="font-bold text-xl m-10">Guess the number between 0 to 100!</p>
+    <input type="number" id="guess" min="0" max="100" class="block w-fit rounded-md border-0 p-4 font-mono text-xl text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:leading-6">
+    <button id="btn" class="bg-indigo-200 m-2 rounded-lg p-4">Guess!</button>
+    <p id="hint"></p>
+    <span id="attempts"></span>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
